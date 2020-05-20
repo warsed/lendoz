@@ -1,6 +1,6 @@
 @font-face {
   font-family: Lato;
-  src: url(fonts/Lato-Black.ttf), url(fonts/Lato-BlackItalic.ttf);
+  src: url(/Lato-Black.a6dd37ab.ttf), url(/Lato-BlackItalic.8e1e1e42.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -48,7 +48,7 @@ svg:hover {
   margin: auto;
 }
 .section-header {
-  background-image: url(img/header.jpg);
+  background-image: url(/header.7aab4a63.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,7 +138,7 @@ svg:hover {
 
 .section-galery-video {
   color: #ffffff;
-  background-image: url(img/video.jpg);
+  background-image: url(/video.6bb4dea6.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,7 +253,7 @@ svg:hover {
 }
 .like-map {
   height: 680px;
-  background-image: url(img/map.jpg);
+  background-image: url(/map.95858949.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -290,3 +290,6 @@ textarea {
 footer {
   background-color: #414042;
 }
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
