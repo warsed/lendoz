@@ -1,6 +1,6 @@
 @font-face {
   font-family: Lato;
-  src: url(fonts/Lato-Black.ttf), url(fonts/Lato-BlackItalic.ttf);
+  src: url(Lato-Black.a6dd37ab.ttf), url(Lato-BlackItalic.8e1e1e42.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +13,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 h1,
 h2,
 h3,
@@ -21,11 +20,9 @@ h4,
 p {
   text-align: center;
 }
-
 ul {
   list-style-type: none;
 }
-
 a {
   display: block;
   text-decoration: none;
@@ -35,12 +32,10 @@ a {
   opacity: 0.7;
   position: relative;
 }
-
 li a:hover {
   opacity: 1;
   transition: ease opacity 0.3s;
 }
-
 li a::after {
   content: "";
   width: 100%;
@@ -52,12 +47,10 @@ li a::after {
   position: absolute;
   transition: ease opacity 0.3s;
 }
-
 li a:hover::after {
   opacity: 1;
   transition: all 0.3s;
 }
-
 .button {
   width: 200px;
   height: 60px;
@@ -66,27 +59,23 @@ li a:hover::after {
   border-radius: 10px;
   background-color: transparent;
 }
-
 .button:hover {
   cursor: pointer;
   background-color: #4bcaff;
   box-shadow: 0px 5px 0px 0px rgba(255, 255, 255, 0.2);
   transition: all 0.3s;
 }
-
 .slider {
   width: 50px;
   height: 25px;
   margin-left: calc(50% - 25px);
 }
-
 svg:hover {
   fill: #4bcaff;
   cursor: pointer;
 }
-
 .section-header {
-  background-image: url(img/header.jpg);
+  background-image: url(header.7aab4a63.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +83,6 @@ svg:hover {
   display: flex;
   flex-direction: column;
 }
-
 .nav {
   background-color: rgba(2, 15, 32, 0.4);
   box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.2);
@@ -104,42 +92,32 @@ svg:hover {
   justify-content: space-around;
   align-items: center;
 }
-
 .menu {
   display: flex;
 }
-
 .menu > li:not(:last-child) {
   margin-right: 25px;
 }
-
 .main {
   display: flex;
   flex-grow: 1;
   max-width: 1170px;
   margin: 0 auto;
 }
-
 .main-content {
   flex-basis: 40%;
   margin-left: auto;
 }
-
 .main-content p {
   margin-top: 10px;
   text-align: left;
 }
-
 .button-main {
   margin: 5px;
 }
-
 .slider-main {
   margin-top: auto;
 }
-
-/*ГАЛЕРЕЯ*/
-
 .section-galery {
   color: #414042;
   background-color: #f9f9f9;
@@ -176,9 +154,6 @@ svg:hover {
   padding: 46px;
   text-align: center;
 }
-
-/*КАРТИНКИ*/
-
 .section-galery-image {
   color: #414042;
   background-color: #ffffff;
@@ -208,18 +183,15 @@ figcaption {
   margin-top: -43px;
   padding: 10px;
   color: #4bcaff;
-  background-color: rgb(65, 64, 66);
+  background-color: #414042;
   opacity: 0.6;
   text-align: center;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
-
-/*ВИДЕО*/
-
 .section-galery-video {
   color: #ffffff;
-  background-image: url(img/video.jpg);
+  background-image: url(video.6bb4dea6.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -240,9 +212,6 @@ figcaption {
   margin-top: 10px;
   margin-left: calc(50% - 100px);
 }
-
-/*ЦЕННИК*/
-
 .section-price {
   color: #414042;
   background-color: #ffffff;
@@ -315,9 +284,6 @@ figcaption {
 .orange {
   background-color: #fd7c00;
 }
-
-/*ТЕСТ*/
-
 .section-test {
   color: #414042;
   background-color: #f9f9f9;
@@ -343,9 +309,6 @@ figcaption {
   margin-top: 10px;
   margin-left: calc(50% - 100px);
 }
-
-/*ЛАЙК*/
-
 .like {
   background-color: #414042;
   height: 210px;
@@ -353,13 +316,12 @@ figcaption {
 }
 .like-map {
   height: 680px;
-  background-image: url(img/map.jpg);
+  background-image: url(map.95858949.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-
 .form-footer {
   max-width: 320px;
   height: 460px;
@@ -393,9 +355,6 @@ textarea {
 footer {
   background-color: #414042;
 }
-
-/* MEDIA */
-
 @media (min-width: 768px) and (max-width: 840px) {
   .nav {
     flex-direction: column;
@@ -440,3 +399,6 @@ footer {
     margin-right: 0;
   }
 }
+
+
+/*# sourceMappingURL=/main-style.72fd2034.css.map */

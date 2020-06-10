@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/less/main-style.less" />
     <title>Test</title>
   </head>
   <body>
     <!--ХЕДЕР-->
-    <section class="section-header">
+    <section class="section-header header-wrapper">
       <header class="header">
-        <nav>
+        <nav class="nav">
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo.png" alt="logo" />
+            </a>
+          </div>
           <ul class="menu">
-            <li class="logo">
-              <a href="#">
-                <img src="img/logo.png" alt="logo" />
-              </a>
-            </li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Gallery</a></li>
@@ -28,9 +28,9 @@
           </ul>
         </nav>
       </header>
-      <div class="wraper">
-        <!--МЕЙН-->
-        <main class="main">
+      <!--МЕЙН-->
+      <main class="main">
+        <div class="main-content">
           <h1>Simple, Beautiful and Amazing</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget
@@ -40,8 +40,12 @@
             sem.
           </p>
           <p>
-            <input type="button" class="button" value="Download" />
-            <input type="button" class="button" value="Learn More" />
+            <input type="button" class="button button-main" value="Download" />
+            <input
+              type="button"
+              class="button button-main"
+              value="Learn More"
+            />
           </p>
           <p>
             Aavailable on :
@@ -70,20 +74,20 @@
               />
             </svg>
           </p>
-        </main>
-        <div class="main-radio">
-          <input type="radio" name="radio" id="radio" />
-          <input type="radio" name="radio" id="radio" />
-          <input type="radio" name="radio" id="radio" />
         </div>
+      </main>
+      <div class="slider slider-main">
+        <input type="radio" name="radio" id="radio" />
+        <input type="radio" name="radio" id="radio" />
+        <input type="radio" name="radio" id="radio" />
       </div>
     </section>
     <!--ГАЛЕРЕЯ-->
     <section class="section-galery">
-      <h3>Summarise the features</h3>
-      <p>Summarise what your product is all about</p>
+      <h1>Summarise the features</h1>
+      <h2>Summarise what your product is all about</h2>
       <div class="galery-icon">
-        <div class="galery-icon-1">
+        <div class="galery-icon-items">
           <div class="fon-icon">
             <img src="img/icon1.svg" alt="logo" />
           </div>
@@ -94,7 +98,7 @@
             pulvinar.
           </p>
         </div>
-        <div class="galery-icon-2">
+        <div class="galery-icon-items">
           <div class="fon-icon">
             <img src="img/icon2.svg" alt="logo" />
           </div>
@@ -105,7 +109,7 @@
             pulvinar.
           </p>
         </div>
-        <div class="galery-icon-3">
+        <div class="galery-icon-items">
           <div class="fon-icon">
             <img src="img/icon3.svg" alt="logo" />
           </div>
@@ -116,7 +120,7 @@
             pulvinar.
           </p>
         </div>
-        <div class="galery-icon-4">
+        <div class="galery-icon-items">
           <div class="fon-icon">
             <img src="img/icon4.svg" alt="logo" />
           </div>
@@ -131,35 +135,47 @@
     </section>
     <!--КАРТИНКИ-->
     <section class="section-galery-image">
-      <h3>Show the gallery</h3>
-      <p>Summarise what your product is all about</p>
+      <h1>Show the gallery</h1>
+      <h2>Summarise what your product is all about</h2>
       <div class="galery-image">
-        <div class="galery-image-1">
-          <img src="img/base.jpg" alt="logo" />
+        <div class="galery-image-items">
+          <figure>
+            <img src="img/base.jpg" alt="logo" />
+            <figcaption>SCREEN SHOT #1</figcaption>
+          </figure>
           <p>
             Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar
             massa idporta nequetiam elerisque mi id faucibus iaculis vitae
             pulvinar.
           </p>
         </div>
-        <div class="galery-image-2">
-          <img src="img/base.jpg" alt="logo" />
+        <div class="galery-image-items">
+          <figure>
+            <img src="img/base.jpg" alt="logo" />
+            <figcaption>SCREEN SHOT #2</figcaption>
+          </figure>
           <p>
             Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar
             massa idporta nequetiam elerisque mi id faucibus iaculis vitae
             pulvinar.
           </p>
         </div>
-        <div class="galery-image-3">
-          <img src="img/base.jpg" alt="logo" />
+        <div class="galery-image-items">
+          <figure>
+            <img src="img/base.jpg" alt="logo" />
+            <figcaption>SCREEN SHOT #3</figcaption>
+          </figure>
           <p>
             Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar
             massa idporta nequetiam elerisque mi id faucibus iaculis vitae
             pulvinar.
           </p>
         </div>
-        <div class="galery-image-4">
-          <img src="img/base.jpg" alt="logo" />
+        <div class="galery-image-items">
+          <figure>
+            <img src="img/base.jpg" alt="logo" />
+            <figcaption>SCREEN SHOT #4</figcaption>
+          </figure>
           <p>
             Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar
             massa idporta nequetiam elerisque mi id faucibus iaculis vitae
@@ -184,7 +200,7 @@
     <!--ЦЕННИК-->
     <section class="section-price">
       <h1>Choose your price</h1>
-      <p>Summarise what your product is all about</p>
+      <h2>Summarise what your product is all about</h2>
       <div class="price">
         <div class="all-price first">
           <h1>Basic package</h1>
@@ -225,19 +241,25 @@
     </section>
     <!--ТЕСТ-->
     <section class="section-test">
-      <h3>Testimonials</h3>
+      <h1>Testimonials</h1>
       <div class="test">
-        <div class="test-icon"></div>
+        <div class="test-icon">
+          <img src="img/test.png" />
+        </div>
         <div class="test-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent
-            lobortis lectus eget libero blandit venenatis.In blandit tortor vel
-            congue malesuada. Suspendisse. molestie lobortis lorem dignissim
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            lobortis lectus eget libero blandit venenatis. In blandit tortor vel
+            congue malesuada. Suspendisse molestie lobortis lorem dignissim
             pretium.
           </p>
-          <span>John Doe<br />some company</span>
+          <p>John Doe<br />some company</p>
         </div>
-        <div class="test-slider"></div>
+      </div>
+      <div class="slider slider-test">
+        <input type="radio" name="radio" id="radio" />
+        <input type="radio" name="radio" id="radio" />
+        <input type="radio" name="radio" id="radio" />
       </div>
     </section>
     <!--ЛАЙК-->
@@ -246,16 +268,24 @@
       <input type="button" class="button now" value="Download Now" />
     </div>
     <div class="like-map">
-      <div class="like-text">
-        <form>
-          <h2>Contact</h2>
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Your Email" />
-          <input type="text" placeholder="Your Subject" />
-          <textarea name="message" rows="7" placeholder="Message"></textarea>
-          <button class="button send">Send</button>
-        </form>
-      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3464887608!2d36.825138272927575!3d55.58152447460605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1590002472913!5m2!1sru!2sru"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+      <form class="form-footer">
+        <h1>Contact</h1>
+        <input type="text" placeholder="Your Name" required />
+        <input type="text" placeholder="Your Email" />
+        <input type="text" placeholder="Your Subject" />
+        <textarea name="message" rows="7" placeholder="Message"></textarea>
+        <button class="button send">Send</button>
+      </form>
     </div>
     <footer>
       <p>All rights reserved &#169; Terms of Service | Privacy Policy</p>
