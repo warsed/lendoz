@@ -3,7 +3,7 @@
   background-color: #ffffff;
 }
 .section-galery-image ~ img {
-  width: auto;
+  width: 100%;
   height: auto;
 }
 .galery-image {
@@ -23,13 +23,24 @@
   font-size: 13px;
   padding: 20px;
 }
-figcaption {
-  margin-top: -43px;
-  padding: 10px;
-  color: #4bcaff;
-  background-color: rgb(65, 64, 66);
-  opacity: 0.6;
+.overlay-container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(111, 213, 255, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  color: #414042;
   text-align: center;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
+  border-radius: 7px;
+}
+.overlay-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
 }

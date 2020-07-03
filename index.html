@@ -10,12 +10,15 @@
     <!--ХЕДЕР-->
     <section class="section-header header-wrapper">
       <header class="header">
-        <nav class="nav">
+        <nav class="nav nav-closed">
           <div class="logo">
             <a href="#">
               <img src="img/logo.png" alt="logo" />
             </a>
           </div>
+          <button class="toggle-button" type="button">
+            <span class="visually-hidden">Open</span>
+          </button>
           <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">Features</a></li>
@@ -76,11 +79,6 @@
           </p>
         </div>
       </main>
-      <div class="slider slider-main">
-        <input type="radio" name="radio" id="radio" />
-        <input type="radio" name="radio" id="radio" />
-        <input type="radio" name="radio" id="radio" />
-      </div>
     </section>
     <!--ГАЛЕРЕЯ-->
     <section class="section-galery">
@@ -139,10 +137,10 @@
       <h2>Summarise what your product is all about</h2>
       <div class="galery-image">
         <div class="galery-image-items">
-          <figure>
+          <div class="overlay-container">
             <img src="img/base.jpg" alt="logo" />
-            <figcaption>SCREEN SHOT #1</figcaption>
-          </figure>
+            <div class="overlay">SCREEN SHOT #1</div>
+          </div>
           <p>
             Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar
             massa idporta nequetiam elerisque mi id faucibus iaculis vitae
@@ -150,10 +148,10 @@
           </p>
         </div>
         <div class="galery-image-items">
-          <figure>
+          <div class="overlay-container">
             <img src="img/base.jpg" alt="logo" />
-            <figcaption>SCREEN SHOT #2</figcaption>
-          </figure>
+            <div class="overlay">SCREEN SHOT #2</div>
+          </div>
           <p>
             Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar
             massa idporta nequetiam elerisque mi id faucibus iaculis vitae
@@ -161,10 +159,10 @@
           </p>
         </div>
         <div class="galery-image-items">
-          <figure>
+          <div class="overlay-container">
             <img src="img/base.jpg" alt="logo" />
-            <figcaption>SCREEN SHOT #3</figcaption>
-          </figure>
+            <div class="overlay">SCREEN SHOT #3</div>
+          </div>
           <p>
             Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar
             massa idporta nequetiam elerisque mi id faucibus iaculis vitae
@@ -172,10 +170,10 @@
           </p>
         </div>
         <div class="galery-image-items">
-          <figure>
+          <div class="overlay-container">
             <img src="img/base.jpg" alt="logo" />
-            <figcaption>SCREEN SHOT #4</figcaption>
-          </figure>
+            <div class="overlay">SCREEN SHOT #4</div>
+          </div>
           <p>
             Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar
             massa idporta nequetiam elerisque mi id faucibus iaculis vitae
@@ -244,7 +242,7 @@
       <h1>Testimonials</h1>
       <div class="test">
         <div class="test-icon">
-          <img src="img/test.png" />
+          <img src="img/test.png" alt="logo" />
         </div>
         <div class="test-text">
           <p>
@@ -257,15 +255,18 @@
         </div>
       </div>
       <div class="slider slider-test">
-        <input type="radio" name="radio" id="radio" />
-        <input type="radio" name="radio" id="radio" />
-        <input type="radio" name="radio" id="radio" />
+        <input type="radio" name="toggle" id="radio_1" />
+        <input type="radio" name="toggle" id="radio_2" />
+        <input type="radio" name="toggle" id="radio_3" />
+        <label class="slider__toggle" for="radio_1"></label>
+        <label class="slider__toggle" for="radio_2"></label>
+        <label class="slider__toggle" for="radio_3"></label>
       </div>
     </section>
     <!--ЛАЙК-->
     <div class="like">
       <h1>Do you Like this app?</h1>
-      <input type="button" class="button now" value="Download Now" />
+      <button class="button now">Download Now</button>
     </div>
     <div class="like-map">
       <iframe
@@ -284,11 +285,12 @@
         <input type="text" placeholder="Your Email" />
         <input type="text" placeholder="Your Subject" />
         <textarea name="message" rows="7" placeholder="Message"></textarea>
-        <button class="button send">Send</button>
+        <button class="button send" type="submit">Send</button>
       </form>
     </div>
     <footer>
       <p>All rights reserved &#169; Terms of Service | Privacy Policy</p>
     </footer>
+    <script src="/menu.js"></script>
   </body>
 </html>

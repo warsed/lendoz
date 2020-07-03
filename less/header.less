@@ -16,6 +16,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .menu {
@@ -36,10 +38,10 @@
 .main-content {
   flex-basis: 40%;
   margin-left: auto;
+  padding: 5px;
 }
 
 .main-content p {
-  margin-top: 10px;
   text-align: left;
 }
 
@@ -47,6 +49,46 @@
   margin: 5px;
 }
 
-.slider-main {
-  margin-top: auto;
+.visually-hidden {
+  visibility: hidden;
+}
+.toggle-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+.nav-closed .toggle-button::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #4bcaff;
+  box-shadow: 0 8px 0 0 #4bcaff, 0 16px 0 0 #4bcaff;
+}
+.nav-opened .toggle-button {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #4bcaff;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
